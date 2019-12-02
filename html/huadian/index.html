@@ -3,9 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<!-- 开发环境版本，包含了有帮助的命令行警告 -->
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
-	<div>
+	<div id="app">
 		<ul>
 			<li>143243</li>
 			<li>143243</li>
@@ -14,7 +16,39 @@
 			<li>234455</li>
 		</ul>
 
+		<select v-model="type" id="">
+			<option
+				v-for="item in typeList"
+				:value="item.value"
+			>
+				{{ item.text }}
+			</option>
+		</select>
+		
+		<input :type="type" placeholder="请输入" v-model="val">
+
 	</div>
+
+	<script>
+
+		var vm = new Vue({
+			el: "#app",
+			data: {
+				type: "text",
+				val: null,
+				typeList: [
+					{ value: "text", text: "string" },
+					{ value: "number", text: "数字int"},
+					{ value: "password", text: "密码password" }
+				]
+			},
+			methods: {
+
+			}
+		})
+
+
+	</script>
 	
 </body>
 </html>
