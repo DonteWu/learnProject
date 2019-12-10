@@ -3,7 +3,6 @@
 
 <head>
 	<meta charset="UTF-8">
-<<<<<<< HEAD
 	<title>馨华花店</title>
 	<style>
 		* {
@@ -11,26 +10,46 @@
 			padding: 0;
 		}
 
-		body {
-			background-color: pink;
-		}
+
 
 		a {
 			text-decoration: none;
+			display: block;
 		}
 
+		.container {
+			width: 1000px;
+			margin: auto;
+			background-color: pink;
+		}
+
+		/* 清除浮动 */
+		.main::after,
+		.box::after {
+			clear: both;
+			display: block;
+			content: "";
+		}
 
 		.main .logo {
+			width: 30%;
 			font-size: 80px;
 			color: white;
+			float: left;
+		}
 
+		.main .logo img {
+			width: 100%;
 		}
 
 		.main .title {
-			padding-left: 160px;
+			width: 70%;
 			height: 160px;
-			width: 300px;
-			text-align: 20 0;
+			text-align: center;
+			float: left;
+			line-height: 160px;
+			font-size: 40px;
+			color: white;
 		}
 
 		.left-box .flower {
@@ -48,7 +67,7 @@
 		.left-box .flower a {
 
 
-			background-color: rgb(121, 117, 117);
+			background-color: rgb(196, 193, 193);
 			color: black;
 
 		}
@@ -61,118 +80,109 @@
 		.box {
 			width: 100%;
 			border: 1px;
-			float: left;
 		}
 
 		.box .left-box {
 			height: 500px;
-			width: 10%;
+			width: 18%;
 			float: left;
+			padding: 0 2%;
 		}
 
 		.box .right-box {
 			float: left;
-			 
-			width: 85%;
-			margin-left: 20px;
+			width: 75%;
+			margin-left: 2%;
 			background-color: white;
-			padding-left: 20px;
 		}
 
-		.right-box .img {
-			width: 24.5%;
-			height: 300px;
 
+		.img-list li {
+			float: left;
+			width: 25%;
+		}
+
+		.img-list {
+			list-style: none;
+		}
+
+		.img-list li .img {
+			width: 100%;
 		}
 	</style>
-=======
-	<title>Document</title>
-	<!-- 开发环境版本，包含了有帮助的命令行警告 -->
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
->>>>>>> db886b1f2e43cf9af5f03dfb8fee9783359ff99e
 </head>
 
 <body>
-<<<<<<< HEAD
-	<div class="main">
-		<div class="logo">
-			<p>
+	<div class="container">
+		<!-- logo和标题部分 -->
+		<div class="main">
+			<div class="logo">
 				<a href="#">
-					<img src="logo.gif" height="160px" width="430px"></a>
-				<span class="title">欢迎光临馨华网上花店！</span>
-			</p>
+					<img src="logo.gif">
+				</a>
+			</div>
+			<div class="title">
+				<p>欢迎光临馨华网上花店！</p>
+			</div>
 		</div>
-=======
-	<div id="app">
-		<ul>
-			<li>143243</li>
-			<li>143243</li>
-			<li>654213</li>
-			<li>143243</li>
-			<li>234455</li>
-		</ul>
->>>>>>> db886b1f2e43cf9af5f03dfb8fee9783359ff99e
 
-		<select v-model="type" id="">
-			<option
-				v-for="item in typeList"
-				:value="item.value"
-			>
-				{{ item.text }}
-			</option>
-		</select>
-		
-		<input :type="type" placeholder="请输入" v-model="val">
+		<!-- 导航和图片内容 -->
+		<div class="box">
+			<div class="left-box">
+				<ul>
+					<li class="flower"><a href="#">生日送花</a></li>
+					<li class="flower"><a href="#">亲情送花</a></li>
+					<li class="flower"><a href="#">友情送花</a></li>
+					<li class="flower"><a href="#">开业送花</a></li>
+					<li class="flower"><a href="#">庆典送花</a></li>
+					<li class="flower"><a href="#">商务送花</a></li>
+				</ul>
+			</div>
 
+			<div class="right-box">
+				<ul class="img-list">
+					<li>
+						<a href="#"><img src="1-1.jpg" class="img"></a>
+					</li>
+					<li>
+						<a href="#"><img src="1-2.jpg" class="img"></a>
+					</li>
+					<li>
+						<a href="#"><img src="1-3.jpg" class="img"></a>
+					</li>
+					<li>
+						<a href="#"><img src="1-4.jpg" class="img"></a>
+					</li>
+					<li>
+						<a href="#"><img src="2-1.jpg" class="img"></a>
+					</li>
+					<li>
+						<a href="#"><img src="2-3.jpg" class="img"></a>
+					</li>
+					<li>
+						<a href="#"><img src="2-4.jpg" class="img"></a>
+					</li>
+					<li>
+						<a href="#"><img src="2-2.jpg" class="img"></a>
+					</li>
+				</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			</div>
+		</div>
 	</div>
-<<<<<<< HEAD
-	<div class="box">
-		<div class="left-box">
-			<ul>
-				<li class="flower"><a href="#">生日送花</a></li>
-				<li class="flower"><a href="#">亲情送花</a></li>
-				<li class="flower"><a href="#">友情送花</a></li>
-				<li class="flower"><a href="#">开业送花</a></li>
-				<li class="flower"><a href="#">庆典送花</a></li>
-				<li class="flower"><a href="#">商务送花</a></li>
-			</ul>
-		</div>
-
-		<div class="right-box">
-			<a href="#"><img src="1-1.jpg" class="img"></a>
-			<a href="#"><img src="1-2.jpg" class="img"></a>
-			<a href="#"><img src="1-3.jpg" class="img"></a>
-			<a href="#"><img src="1-4.jpg" class="img"></a>
-			<a href="#"><img src="2-1.jpg" class="img"></a>
-			<a href="#"><img src="2-2.jpg" class="img"></a>
-			<a href="#"><img src="2-3.jpg" class="img"></a>
-			<a href="#"><img src="2-4.jpg" class="img"></a>
-		</div>
-	</div>s
-=======
-
-	<script>
-
-		var vm = new Vue({
-			el: "#app",
-			data: {
-				type: "text",
-				val: null,
-				typeList: [
-					{ value: "text", text: "string" },
-					{ value: "number", text: "数字int"},
-					{ value: "password", text: "密码password" }
-				]
-			},
-			methods: {
-
-			}
-		})
-
-
-	</script>
-	
->>>>>>> db886b1f2e43cf9af5f03dfb8fee9783359ff99e
 </body>
 
 </html>
