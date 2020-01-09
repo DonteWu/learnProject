@@ -55,7 +55,7 @@ var vm = new Vue({
       {
         mainTitle: "智能识别身份信息",
         smallTitle: "拍一拍，智能填写身份信息",
-        pic: "../img/visa4.jpg",
+        pic: "webPortal/img/visa4.jpg",
         promotTexts: [
           "OCR黑科技只能识别",
           "基础资料一键搞定，省时省事",
@@ -66,7 +66,7 @@ var vm = new Vue({
       {
         mainTitle: "智能识别护照信息",
         smallTitle: "智能识别护照，自动填写护照信息",
-        pic: "../img/visa2.jpg",
+        pic: "webPortal/img/visa2.jpg",
         promotTexts: [
           "OCR黑科技只能识别",
           "基础资料一键搞定，省时省事",
@@ -77,7 +77,7 @@ var vm = new Vue({
       {
         mainTitle: "手机拍摄证件照",
         smallTitle: "手机拍摄证件照，无需再跑照相馆",
-        pic: "../img/visa3.jpg",
+        pic: "webPortal/img/visa3.jpg",
         promotTexts: [
           "自动检测是否佩戴不合格饰品",
           "智能检测光线是否有阴阳脸",
@@ -114,7 +114,7 @@ var vm = new Vue({
         "一张表格，覆盖多个国家，办完美国或申根国家，下次办理基本不用填表了",
       ]
     },
-    codePicUrl: "../img/visa1.jpg",
+    codePicUrl: "webPortal/img/visa1.jpg",
     sumCount: null,
     aniTime: 0,
     curIndex: 0,
