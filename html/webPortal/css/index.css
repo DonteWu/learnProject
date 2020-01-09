@@ -1,0 +1,271 @@
+html{
+  font-size: 14px;
+}
+html,body{
+  height: 100%;
+  overflow: hidden;
+}
+ul,ol{
+  list-style: none;
+}
+
+.transition-05s{
+  transform: translateY(30%);
+  transition: all .5s .4s;
+  opacity: 0;
+}
+.tsf-tsy{
+  opacity: 1;
+  transform: translateY(0);
+}
+#container{
+  transition: all .6s;
+}
+#container, .section {
+  height: 100vh;
+}
+
+/* 固定头部logo */
+.headers{
+  position: fixed;
+  top: 0;
+  z-index: 11;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.headers .logo-wraper{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo-wraper .logo{
+  width: 120px;
+}
+.logo-wraper .logo img{
+  width: 100%;
+}
+
+/* 修改element样式 */
+/* banner指示器 -- 底部的小点 */
+.el-carousel .el-carousel__button{
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 6px;
+  opacity: 1;
+}
+.el-carousel .is-active .el-carousel__button{
+  width: 36px;
+  height: 10px;
+  background: rgba(57,189,210,1);
+  border-radius: 6px;
+}
+
+/* banner */
+.banner{
+  height: 100%;
+}
+
+/* labels标签项 */
+.label-box{
+  background-color: #F4F4F4;
+  overflow: hidden;
+}
+.label-list {
+  max-width: 1200px;
+  min-width: 900px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.label-list .item{
+  width: 320px;
+  height: 180px;
+  margin-bottom: 96px;
+  background:#FFFFFF;
+  text-align: center;
+}
+.label-list .item .iconfont{
+  color: #33b3b4;
+  font-size: 40px;
+}
+
+.label-list .item p{
+  margin-top: 30px;
+  color: #656565;
+}
+.label-img{
+  text-align: center;
+}
+.label-img img{
+  width: 368px;
+}
+
+/* 扫码图片 */
+.bg-pic{
+  width: 100%;
+  height: 100%;
+  /* background: url(../img/visa1.jpg) no-repeat; */
+  background-position: center !important;
+  background-size: cover !important;
+}
+.info-pic{
+  font-size: 0;
+}
+
+/* 识别身份信息 */
+.info-container{
+  overflow: hidden;
+}
+.info-container .font-box{
+  width: 620px;
+  margin-top: 70px;
+  margin-left: 60px;
+  padding: 20px 25px 30px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,0.3);
+  color: #fff;
+}
+.font-box-fff{
+  background: rgba(255,255,255,0.2) !important;
+}
+.info-container .title-box .big{
+  font-size: 38px;
+}
+.info-container .title-box .small{
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.features-list{
+  flex-wrap: wrap;
+}
+.features-list .item{
+  width: 50%;
+  margin-top: 30px;
+  padding-left: 30px;
+  position: relative;
+}
+.features-list .item::before{
+  top: 50%;
+  transform: translateY(-50%);
+  background: #7DCDD5;
+}
+.features-list .item::before, .slogan-text .bg-section .item::before{
+  display: block;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+}
+
+
+/* 资料-申请表 */
+.material-form{
+  overflow: hidden;
+}
+.material-form .cell{
+  width: 50%;
+}
+.material-form .cell img{
+  width: 100%;
+}
+
+.material-form .left{
+  /* margin-top: 20px; */
+  margin-right: 70px;
+}
+.material-form.form .right{
+  margin-left: 70px;
+}
+
+
+
+/* 子组件样式 */
+.slogan-text{
+  width: 374px;
+  padding-top: 20px;
+}
+.slogan-text .top-section{
+  color: #656565;
+}
+.slogan-text .top-section .title-big{
+  color: #373737;
+  font-size: 38px;
+}
+.slogan-text .top-section .title-small{
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+.slogan-text .top-section .text-box{
+  padding-left: 16px;
+  margin-top: 30px;
+  font-size: 12px;
+  line-height:24px;
+  letter-spacing:2px;
+  position: relative;
+}
+.slogan-text .top-section .text-box::before{
+  display: block;
+  content: "";
+  width: 3px;
+  height: 21px;
+  background: #39BDD2;
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+
+.slogan-text .bg-section{
+  padding: 50px 10px 80px;
+  margin-top: 26px;
+  background-color: #fff;
+  color: #656565;
+  font-size: 12px;
+}
+.slogan-text .bg-section .item{
+  line-height: 24px;
+  margin-bottom: 26px;
+  padding-left: 18px;
+  position: relative;
+  letter-spacing:1px;
+}
+.slogan-text .bg-section .item::before{
+  top: 8px;
+  background: #39BDD2;
+}
+
+/* 横线 */
+.slogan-text .bottom-line{
+  margin-top: 40px;
+  border-top: 1px solid #D8D8D8;
+  position: relative;
+}
+.slogan-text .bottom-line .dot{
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #D8D8D8;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+}
+
+
+/* 底部 */
+.footer{
+  margin-top: 20px;
+  height: 75px;
+  line-height: 75px;
+  background: #D0D0D0;
+}
+.footer-info{
+  width: 60%;
+  margin: 0 auto;
+  color: #3E3E3E;
+}
